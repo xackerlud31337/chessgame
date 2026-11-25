@@ -39,8 +39,9 @@ describe('StatsView', () => {
     expect(screen.getByRole('img', { name: 'Weak squares heatmap' })).toBeInTheDocument()
     expect(screen.getByRole('img', { name: /Accuracy over the last 2 rounds/ })).toBeInTheDocument()
     // f7 appears in the weakest table with 100%
-    expect(screen.getByText('f7')).toBeInTheDocument()
-    expect(screen.getByText('100%')).toBeInTheDocument()
+    const row = screen.getByText('f7').closest('tr')!
+    expect(row.textContent).toContain('100%')
+    expect(row.textContent).toContain('2')
 
     fireEvent.click(screen.getByRole('button', { name: 'Reset stats' }))
     expect(screen.getByText(/can't be undone/)).toBeInTheDocument()
