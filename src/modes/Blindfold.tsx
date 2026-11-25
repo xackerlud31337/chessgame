@@ -11,6 +11,7 @@ import { useKeyboard } from '../hooks/useKeyboard'
 import { useSetRound } from '../hooks/useSetRound'
 import { describePiece, piecesFromFen } from '../lib/fen'
 import { pickPositions } from '../lib/positions'
+import { seededRng } from '../lib/random'
 import { checkAnswer, explain, generateQuestion, revealSquare, type Question } from '../lib/questions'
 import type { Square } from '../lib/squares'
 
@@ -19,9 +20,9 @@ const PER_ROUND = 10
 export function Blindfold({ onMenu }: { onMenu: () => void }) {
   const round = useSetRound('blindfold', PER_ROUND)
   const { settings } = round
-  const positions = useMemo(() => pickPositions(PER_ROUND, settings.difficulty), [settings.difficulty, round.seed])
+  const positions = useMemo(() => pickPositions(PER_ROUND, settings.difficulty, seededRng(round.seed)), [settings.difficulty, round.seed])
   const position = positions[round.index]
-  const question = useMemo<Question>(() => generateQuestion(position.fen), [position.fen])
+  const question = useMemo<Question>(() => generateQuestion(position.fen, seededRng(round.seed + round.index)), [position.fen, round.seed, round.index])
   const pieces = useMemo(() => piecesFromFen(position.fen), [position.fen])
 
   const [typed, setTyped] = useState('')

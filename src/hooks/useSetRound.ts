@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { sounds } from '../lib/sound'
 import { accuracyOf, type ModeId, type RoundResult } from '../lib/stats'
+import { randomSeed } from '../lib/random'
 import { useSettings } from './useSettings'
 import { useStats } from './useStats'
 
@@ -15,7 +16,7 @@ export function useSetRound(mode: ModeId, total: number) {
   const [correct, setCorrect] = useState(0)
   const [attempts, setAttempts] = useState(0)
   const [result, setResult] = useState<RoundResult | null>(null)
-  const [seed, setSeed] = useState(0)
+  const [seed, setSeed] = useState(randomSeed)
   const startedAt = useRef(performance.now())
   const bestBefore = useRef(stats.modes[mode]?.best ?? 0)
 
@@ -60,7 +61,7 @@ export function useSetRound(mode: ModeId, total: number) {
     setCorrect(0)
     setAttempts(0)
     setResult(null)
-    setSeed((s) => s + 1)
+    setSeed(randomSeed())
   }, [])
 
   return { index, total, correct, attempts, result, bestBefore: bestBefore.current, seed, answer, next, restart, settings }

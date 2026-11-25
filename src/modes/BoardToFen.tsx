@@ -10,6 +10,7 @@ import { useKeyboard } from '../hooks/useKeyboard'
 import { useSetRound } from '../hooks/useSetRound'
 import { boardPartOf, compareBoardParts, piecesFromFen, type BoardComparison } from '../lib/fen'
 import { pickPositions } from '../lib/positions'
+import { seededRng } from '../lib/random'
 import { FILES, type Square } from '../lib/squares'
 
 const PER_ROUND = 5
@@ -17,14 +18,14 @@ const PER_ROUND = 5
 export function BoardToFen({ onMenu }: { onMenu: () => void }) {
   const round = useSetRound('boardToFen', PER_ROUND)
   const { settings } = round
-  const positions = useMemo(() => pickPositions(PER_ROUND, settings.difficulty), [settings.difficulty, round.seed])
+  const positions = useMemo(() => pickPositions(PER_ROUND, settings.difficulty, seededRng(round.seed)), [settings.difficulty, round.seed])
   const position = positions[round.index]
   const pieces = useMemo(() => piecesFromFen(position.fen), [position.fen])
 
   const [text, setText] = useState('')
   const [comparison, setComparison] = useState<BoardComparison | null>(null)
   const [done, setDone] = useState<'right' | 'revealed' | null>(null)
-  const firstTry = useRef(true)
+  const [firstTry, setFirstTry] = useState(true)
   const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
@@ -37,10 +38,10 @@ export function BoardToFen({ onMenu }: { onMenu: () => void }) {
     const c = compareBoardParts(boardPartOf(position.fen), text)
     setComparison(c)
     if (c.equal) {
-      round.answer(firstTry.current)
+      round.answer(firstTry)
       setDone('right')
     } else {
-      firstTry.current = false
+      setFirstTry(false)
     }
   }
 
@@ -54,7 +55,7 @@ export function BoardToFen({ onMenu }: { onMenu: () => void }) {
     setText('')
     setComparison(null)
     setDone(null)
-    firstTry.current = true
+    setFirstTry(true)
     round.next()
   }
 
@@ -62,7 +63,7 @@ export function BoardToFen({ onMenu }: { onMenu: () => void }) {
     setText('')
     setComparison(null)
     setDone(null)
-    firstTry.current = true
+    setFirstTry(true)
     round.restart()
   }
 
@@ -91,7 +92,7 @@ export function BoardToFen({ onMenu }: { onMenu: () => void }) {
         <>
           <FenText fen={position.fen} showOk boardOnly />
           <div className={`result-line ${done === 'right' ? 'ok' : 'bad'}`} aria-live="polite">
-            {done === 'right' ? (firstTry.current ? 'Correct, first try!' : 'Correct (after a retry).') : 'Here is the answer.'}
+            {done === 'right' ? (firstTry ? 'Correct, first try!' : 'Correct (after a retry).') : 'Here is the answer.'}
           </div>
           <div className="row" style={{ justifyContent: 'center' }}>
             <button type="button" className="btn primary lg" onClick={goNext} autoFocus>

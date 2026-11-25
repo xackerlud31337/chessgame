@@ -8,6 +8,7 @@ import { useKeyboard } from '../hooks/useKeyboard'
 import { useSetRound } from '../hooks/useSetRound'
 import { describePiece } from '../lib/fen'
 import { generateVisionPuzzle, gradeSelection, type VisionDifficulty } from '../lib/pieceVision'
+import { seededRng } from '../lib/random'
 import type { Square } from '../lib/squares'
 
 const PER_ROUND = 8
@@ -17,7 +18,7 @@ export function PieceVision({ onMenu }: { onMenu: () => void }) {
   const { settings } = round
   const difficulty: VisionDifficulty =
     settings.difficulty === 'mixed' ? (['easy', 'medium', 'hard'] as const)[Math.min(2, Math.floor((round.index / PER_ROUND) * 3))] : settings.difficulty
-  const puzzle = useMemo(() => generateVisionPuzzle(difficulty), [difficulty, round.index, round.seed])
+  const puzzle = useMemo(() => generateVisionPuzzle(difficulty, seededRng(round.seed + round.index)), [difficulty, round.index, round.seed])
 
   const [selected, setSelected] = useState<Square[]>([])
   const [grade, setGrade] = useState<ReturnType<typeof gradeSelection> | null>(null)

@@ -11,6 +11,7 @@ import { useKeyboard } from '../hooks/useKeyboard'
 import { useSetRound } from '../hooks/useSetRound'
 import { comparePlacements, piecesFromFen, type Placement } from '../lib/fen'
 import { pickPositions } from '../lib/positions'
+import { seededRng } from '../lib/random'
 import type { Square } from '../lib/squares'
 
 const PER_ROUND = 5
@@ -18,7 +19,7 @@ const PER_ROUND = 5
 export function FenToBoard({ onMenu }: { onMenu: () => void }) {
   const round = useSetRound('fenToBoard', PER_ROUND)
   const { settings } = round
-  const positions = useMemo(() => pickPositions(PER_ROUND, settings.difficulty), [settings.difficulty, round.seed])
+  const positions = useMemo(() => pickPositions(PER_ROUND, settings.difficulty, seededRng(round.seed)), [settings.difficulty, round.seed])
   const position = positions[round.index]
   const expected = useMemo(() => piecesFromFen(position.fen), [position.fen])
 
