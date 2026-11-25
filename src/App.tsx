@@ -98,7 +98,7 @@ function Shell() {
       <main className="main">{page}</main>
       <footer className="footer">
         Pieces: cburnett set from Lichess (CC BY-SA 3.0). Built with React + Vite.{' '}
-        <a href="https://github.com/xackerlud/chess-vision-trainer">Source</a>
+        <a href="https://github.com/xackerlud31337/chessgame">Source</a>
       </footer>
     </div>
   )

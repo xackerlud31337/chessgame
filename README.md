@@ -3,7 +3,7 @@
 A small, fully client-side web app that trains chess board vision: first knowing every
 square's name instantly, then reading whole positions from FEN without seeing a board.
 
-**Live:** https://xackerlud.github.io/chess-vision-trainer/
+**Live:** https://xackerlud31337.github.io/chessgame/
 
 <p align="center">
   <img src="docs/find-the-square.png" alt="Find the square drill" width="360">
@@ -50,7 +50,7 @@ npm run build      # production build into dist/
 npm run preview    # build with base "/" and serve it locally
 ```
 
-The production `base` path defaults to `/chess-vision-trainer/` for GitHub Pages. Override it with
+The production `base` path defaults to `/chess-vision-trainer/`; the deploy workflow overrides it with the actual repository name. Override it with
 `VITE_BASE=/ npm run build` for any other host.
 
 ## Deploy
