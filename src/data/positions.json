@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "difficulty": "easy",
+    "fen": "8/7r/8/2K5/8/4k3/8/8 b - - 0 1"
+  },
+  {
+    "id": 2,
+    "difficulty": "easy",
+    "fen": "3b1K2/k7/1q6/8/8/8/8/8 b - - 0 1"
+  },
+  {
+    "id": 3,
+    "difficulty": "easy",
+    "fen": "K7/8/8/8/8/1k6/8/7r b - - 0 1"
+  },
+  {
+    "id": 4,
+    "difficulty": "easy",
+    "fen": "8/8/5K2/8/k7/2B5/8/1Q6 b - - 0 1"
+  },
+  {
+    "id": 5,
+    "difficulty": "easy",
+    "fen": "6Q1/2K5/8/8/8/4k3/8/8 b - - 0 1"
+  },
+  {
+    "id": 6,
+    "difficulty": "easy",
+    "fen": "8/4Br2/8/8/K7/8/8/4k3 b - - 0 1"
+  },
+  {
+    "id": 7,
+    "difficulty": "easy",
+    "fen": "8/8/1K6/8/8/1Q6/k7/8 b - - 0 1"
+  },
+  {
+    "id": 8,
+    "difficulty": "easy",
+    "fen": "8/8/5N2/b5k1/8/K7/8/8 w - - 0 1"
+  },
+  {
+    "id": 9,
+    "difficulty": "easy",
+    "fen": "5R2/8/1K4k1/8/8/8/8/8 w - - 0 1"
+  },
+  {
+    "id": 10,
+    "difficulty": "easy",
+    "fen": "8/7r/8/8/8/k1K5/8/N7 b - - 0 1"
+  },
+  {
+    "id": 11,
+    "difficulty": "easy",
+    "fen": "8/8/5K2/8/8/8/3q4/6k1 b - - 0 1"
+  },
+  {
+    "id": 12,
+    "difficulty": "easy",
+    "fen": "8/1q5n/8/8/8/K7/8/k7 b - - 0 1"
+  },
+  {
+    "id": 13,
+    "difficulty": "easy",
+    "fen": "8/2k5/8/8/4q3/6K1/8/8 w - - 0 1"
+  },
+  {
+    "id": 14,
+    "difficulty": "easy",
+    "fen": "8/8/8/4nK2/7k/6R1/8/8 b - - 0 1"
+  },
+  {
+    "id": 15,
+    "difficulty": "easy",
+    "fen": "8/Q7/8/6k1/3K4/8/8/8 b - - 0 1"
+  },
+  {
+    "id": 16,
+    "difficulty": "easy",
+    "fen": "8/3K4/8/1B6/1q6/8/8/1k6 w - - 0 1"
+  },
+  {
+    "id": 17,
+    "difficulty": "easy",
+    "fen": "8/8/2K5/8/q7/8/4k3/8 w - - 0 1"
+  },
+  {
+    "id": 18,
+    "difficulty": "easy",
+    "fen": "8/R7/8/1k6/8/6N1/2K5/8 w - - 0 1"
+  },
+  {
+    "id": 19,
+    "difficulty": "easy",
+    "fen": "8/8/8/8/2K4q/8/2k5/8 w - - 0 1"
+  },
+  {
+    "id": 20,
+    "difficulty": "easy",
+    "fen": "k2K4/8/7n/2R5/8/8/8/8 b - - 0 1"
+  },
+  {
+    "id": 21,
+    "difficulty": "easy",
+    "fen": "8/7r/8/8/8/8/2K2k2/8 w - - 0 1"
+  },
+  {
+    "id": 22,
+    "difficulty": "easy",
+    "fen": "1N6/8/k7/8/4B3/3K4/8/8 b - - 0 1"
+  },
+  {
+    "id": 23,
+    "difficulty": "easy",
+    "fen": "4k3/8/8/8/8/2K3Q1/8/8 w - - 0 1"
+  },
+  {
+    "id": 24,
+    "difficulty": "easy",
+    "fen": "8/6K1/8/3R4/8/8/7q/1k6 w - - 0 1"
+  },
+  {
+    "id": 25,
+    "difficulty": "easy",
+    "fen": "8/8/8/5R1k/8/8/2K5/8 b - - 0 1"
+  },
+  {
+    "id": 26,
+    "difficulty": "easy",
+    "fen": "8/8/1bK5/6n1/8/8/5k2/8 b - - 0 1"
+  },
+  {
+    "id": 27,
+    "difficulty": "easy",
+    "fen": "8/8/7R/1K6/8/5k2/8/8 b - - 0 1"
+  },
+  {
+    "id": 28,
+    "difficulty": "easy",
+    "fen": "8/8/3k4/7B/3K4/8/8/n7 w - - 0 1"
+  },
+  {
+    "id": 29,
+    "difficulty": "easy",
+    "fen": "8/3K4/8/2Q5/8/8/8/7k w - - 0 1"
+  },
+  {
+    "id": 30,
+    "difficulty": "easy",
+    "fen": "8/8/8/5K2/2k5/2b5/4b3/8 b - - 0 1"
+  },
+  {
+    "id": 31,
+    "difficulty": "easy",
+    "fen": "8/2k5/8/7r/8/8/8/2K5 w - - 0 1"
+  },
+  {
+    "id": 32,
+    "difficulty": "easy",
+    "fen": "8/8/8/2K5/8/5rk1/2n5/8 b - - 0 1"
+  },
+  {
+    "id": 33,
+    "difficulty": "easy",
+    "fen": "2K5/8/8/k7/8/8/4q3/8 w - - 0 1"
+  },
+  {
+    "id": 34,
+    "difficulty": "easy",
+    "fen": "k7/5K2/1B6/8/8/8/3n4/8 b - - 0 1"
+  },
+  {
+    "id": 35,
+    "difficulty": "easy",
+    "fen": "K7/8/8/8/1q6/8/6k1/8 w - - 0 1"
+  },
+  {
+    "id": 36,
+    "difficulty": "medium",
+    "fen": "8/4k3/6p1/8/8/7p/4KN2/8 b - - 0 1"
+  },
+  {
+    "id": 37,
+    "difficulty": "medium",
+    "fen": "8/7p/3K4/8/7p/3B2k1/2R5/8 b - - 0 1"
+  },
+  {
+    "id": 38,
+    "difficulty": "medium",
+    "fen": "8/7b/1p6/1K6/6B1/3B3k/8/1b6 b - - 0 1"
+  },
+  {
+    "id": 39,
+    "difficulty": "medium",
+    "fen": "1r5R/3p4/8/4p3/7N/2k3K1/7n/8 b - - 0 1"
+  },
+  {
+    "id": 40,
+    "difficulty": "medium",
+    "fen": "5R2/8/3N2K1/b4pP1/n4k2/7p/8/8 w - - 0 1"
+  },
+  {
+    "id": 41,
+    "difficulty": "medium",
+    "fen": "3k4/8/7Q/8/7K/2N5/4B3/8 b - - 0 1"
+  },
+  {
+    "id": 42,
+    "difficulty": "medium",
+    "fen": "7b/2k5/8/3p1K2/8/6p1/1n6/8 b - - 0 1"
+  },
+  {
+    "id": 43,
+    "difficulty": "medium",
+    "fen": "5R2/2q4R/3k3b/8/8/6K1/7p/8 b - - 0 1"
+  },
+  {
+    "id": 44,
+    "difficulty": "medium",
+    "fen": "R7/rp6/8/8/7K/p2p4/6p1/1k6 w - - 0 1"
+  },
+  {
+    "id": 45,
+    "difficulty": "medium",
+    "fen": "2k5/KP1r1P2/8/R7/3p4/4r3/4N3/8 b - - 0 1"
+  },
+  {
+    "id": 46,
+    "difficulty": "medium",
+    "fen": "8/7P/4p3/2k5/K5B1/8/8/8 b - - 0 1"
+  },
+  {
+    "id": 47,
+    "difficulty": "medium",
+    "fen": "7k/8/8/4B3/4P3/2p5/5p1K/8 b - - 0 1"
+  },
+  {
+    "id": 48,
+    "difficulty": "medium",
+    "fen": "4bK2/k7/5p2/8/2Pp4/8/8/7n b - - 0 1"
+  },
+  {
+    "id": 49,
+    "difficulty": "medium",
+    "fen": "8/K3p2k/4P3/1q5P/8/6B1/3R4/8 w - - 0 1"
+  },
+  {
+    "id": 50,
+    "difficulty": "medium",
+    "fen": "7q/1P1p1k2/2K5/8/1R6/P4P1b/8/8 w - - 0 1"
+  },
+  {
+    "id": 51,
+    "difficulty": "medium",
+    "fen": "8/8/6k1/3K4/6p1/3N4/8/1b6 b - - 0 1"
+  },
+  {
+    "id": 52,
+    "difficulty": "medium",
+    "fen": "8/8/8/8/2R2B2/4P2k/1K2b3/8 w - - 0 1"
+  },
+  {
+    "id": 53,
+    "difficulty": "medium",
+    "fen": "8/5qp1/1k3B2/8/K7/3Q4/8/R7 w - - 0 1"
+  },
+  {
+    "id": 54,
+    "difficulty": "medium",
+    "fen": "K7/3p4/8/5n2/2n2k2/2p5/P1p5/8 w - - 0 1"
+  },
+  {
+    "id": 55,
+    "difficulty": "medium",
+    "fen": "k7/7p/8/1R1K1nB1/8/3R4/3b4/1b6 b - - 0 1"
+  },
+  {
+    "id": 56,
+    "difficulty": "medium",
+    "fen": "8/4p3/K7/P7/3N4/8/2k5/8 b - - 0 1"
+  },
+  {
+    "id": 57,
+    "difficulty": "medium",
+    "fen": "5b2/8/7B/8/3n4/b2k4/5K2/8 w - - 0 1"
+  },
+  {
+    "id": 58,
+    "difficulty": "medium",
+    "fen": "8/7r/3K1p2/4p3/8/8/k1rb4/8 w - - 0 1"
+  },
+  {
+    "id": 59,
+    "difficulty": "medium",
+    "fen": "5K2/7k/3N4/5P2/3q1B2/3P4/8/7N b - - 0 1"
+  },
+  {
+    "id": 60,
+    "difficulty": "medium",
+    "fen": "1k5B/8/8/7n/1p6/n3Rp2/3n4/4K3 w - - 0 1"
+  },
+  {
+    "id": 61,
+    "difficulty": "medium",
+    "fen": "8/3N4/7k/1r6/8/8/1K6/4B3 w - - 0 1"
+  },
+  {
+    "id": 62,
+    "difficulty": "medium",
+    "fen": "8/8/8/4K3/3P3P/8/4P3/2b1k3 b - - 0 1"
+  },
+  {
+    "id": 63,
+    "difficulty": "medium",
+    "fen": "8/4R1b1/8/8/5b2/1kN2Kp1/8/8 w - - 0 1"
+  },
+  {
+    "id": 64,
+    "difficulty": "medium",
+    "fen": "1B4b1/6b1/8/8/8/r4BRk/8/2K5 b - - 0 1"
+  },
+  {
+    "id": 65,
+    "difficulty": "medium",
+    "fen": "n6k/8/8/7P/2P2n2/4n3/2pr4/7K w - - 0 1"
+  },
+  {
+    "id": 66,
+    "difficulty": "medium",
+    "fen": "8/7b/8/1p6/3k4/R4K2/8/8 w - - 0 1"
+  },
+  {
+    "id": 67,
+    "difficulty": "medium",
+    "fen": "K7/8/4pP2/8/1r5k/8/3p4/8 b - - 0 1"
+  },
+  {
+    "id": 68,
+    "difficulty": "medium",
+    "fen": "8/7P/8/5kp1/p7/1r6/R7/3K4 w - - 0 1"
+  },
+  {
+    "id": 69,
+    "difficulty": "medium",
+    "fen": "6N1/1R1P4/2k2n2/1nb5/8/7K/8/8 b - - 0 1"
+  },
+  {
+    "id": 70,
+    "difficulty": "medium",
+    "fen": "8/P2Qn3/4Rk2/7p/8/5P2/1K6/6Q1 b - - 0 1"
+  },
+  {
+    "id": 71,
+    "difficulty": "hard",
+    "name": "Starting position",
+    "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  },
+  {
+    "id": 72,
+    "difficulty": "hard",
+    "name": "After 1.e4",
+    "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1"
+  },
+  {
+    "id": 73,
+    "difficulty": "hard",
+    "name": "After 1.e4 e5",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq e6 0 2"
+  },
+  {
+    "id": 74,
+    "difficulty": "hard",
+    "name": "After 1.e4 c5 (Sicilian)",
+    "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq c6 0 2"
+  },
+  {
+    "id": 75,
+    "difficulty": "hard",
+    "name": "After 1.e4 e6 (French)",
+    "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": 76,
+    "difficulty": "hard",
+    "name": "After 1.d4 d5 2.c4 (Queen's Gambit)",
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq c3 0 2"
+  },
+  {
+    "id": 77,
+    "difficulty": "hard",
+    "name": "Ruy Lopez",
+    "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3"
+  },
+  {
+    "id": 78,
+    "difficulty": "hard",
+    "name": "Italian Game",
+    "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3"
+  },
+  {
+    "id": 79,
+    "difficulty": "hard",
+    "name": "King's Indian setup",
+    "fen": "rnbqkb1r/pppppp1p/5np1/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3"
+  },
+  {
+    "id": 80,
+    "difficulty": "hard",
+    "name": "Scholar's mate",
+    "fen": "r1bqkb1r/pppp1Qpp/2n2n2/4p3/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 0 4"
+  },
+  {
+    "id": 81,
+    "difficulty": "hard",
+    "name": "Scandinavian",
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq d6 0 2"
+  },
+  {
+    "id": 82,
+    "difficulty": "hard",
+    "name": "Caro-Kann",
+    "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": 83,
+    "difficulty": "hard",
+    "name": "Pirc",
+    "fen": "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+  },
+  {
+    "id": 84,
+    "difficulty": "hard",
+    "name": "London System",
+    "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR b KQkq - 2 2"
+  },
+  {
+    "id": 85,
+    "difficulty": "hard",
+    "name": "English Opening",
+    "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq c3 0 1"
+  },
+  {
+    "id": 86,
+    "difficulty": "hard",
+    "fen": "5Nk1/8/1P2K3/Q7/6P1/1Qp1r3/bQ6/1R6 w - - 0 1"
+  },
+  {
+    "id": 87,
+    "difficulty": "hard",
+    "fen": "8/7k/1B5b/4pp2/3p4/2N3bP/ppR5/5K2 w - - 0 1"
+  },
+  {
+    "id": 88,
+    "difficulty": "hard",
+    "fen": "6k1/p1P5/pp6/3p1P2/1r6/N4N2/P6b/b2K4 b - - 0 1"
+  },
+  {
+    "id": 89,
+    "difficulty": "hard",
+    "fen": "5Q1B/p5P1/P3P1k1/2b1r3/3p2P1/p6Q/K2b4/8 w - - 0 1"
+  },
+  {
+    "id": 90,
+    "difficulty": "hard",
+    "fen": "6R1/7r/pK1B2qp/2R5/P1Q3P1/6P1/B6q/5rk1 b - - 0 1"
+  },
+  {
+    "id": 91,
+    "difficulty": "hard",
+    "fen": "8/pp1pR2k/1P4p1/3P2P1/1P5q/1Knb4/R2R4/6R1 b - - 0 1"
+  },
+  {
+    "id": 92,
+    "difficulty": "hard",
+    "fen": "1b2B2B/6nP/6K1/3P4/PP4PP/Pr1P3P/4pk2/3n4 b - - 0 1"
+  },
+  {
+    "id": 93,
+    "difficulty": "hard",
+    "fen": "8/pB2PqN1/2p1n3/4K2p/8/5P2/8/4Nk2 b - - 0 1"
+  },
+  {
+    "id": 94,
+    "difficulty": "hard",
+    "fen": "4b3/k2n4/2p1P2P/p7/Nb6/3bp3/K1P5/8 b - - 0 1"
+  },
+  {
+    "id": 95,
+    "difficulty": "hard",
+    "fen": "n1K1r2N/5P2/1p5N/3rP3/4r1b1/r7/4P3/5k2 w - - 0 1"
+  },
+  {
+    "id": 96,
+    "difficulty": "hard",
+    "fen": "n5nK/7R/1r6/4pP1p/p4r2/1P3Pk1/Np6/8 b - - 0 1"
+  },
+  {
+    "id": 97,
+    "difficulty": "hard",
+    "fen": "1B6/2nn1P2/k2P4/6P1/2p1BP2/5qP1/1R1pK1P1/8 w - - 0 1"
+  },
+  {
+    "id": 98,
+    "difficulty": "hard",
+    "fen": "8/3p3P/pB2p3/1Pkp1p1q/8/1P1n1P1p/p7/5NK1 b - - 0 1"
+  },
+  {
+    "id": 99,
+    "difficulty": "hard",
+    "fen": "N6N/1p2p2R/2pn2pQ/3Q4/P4nB1/k1n5/N6K/4R3 b - - 0 1"
+  },
+  {
+    "id": 100,
+    "difficulty": "hard",
+    "fen": "2q3k1/8/2N3r1/3q4/NP4p1/5K2/8/R1B1b3 w - - 0 1"
+  },
+  {
+    "id": 101,
+    "difficulty": "hard",
+    "fen": "2R5/4q3/n3N1pp/3B4/7P/8/P1P2p2/k6K w - - 0 1"
+  },
+  {
+    "id": 102,
+    "difficulty": "hard",
+    "fen": "3Kr1N1/5n2/2N4P/8/3R2P1/1P1P1p2/2b2k2/r7 w - - 0 1"
+  },
+  {
+    "id": 103,
+    "difficulty": "hard",
+    "fen": "8/2Pp2pp/1Bp4q/4p1P1/8/p1p2P1K/k4P2/8 w - - 0 1"
+  },
+  {
+    "id": 104,
+    "difficulty": "hard",
+    "fen": "5r2/4R3/p4q2/3pR1pQ/k1p5/2Rp1Q2/3RKP2/8 w - - 0 1"
+  },
+  {
+    "id": 105,
+    "difficulty": "hard",
+    "fen": "6B1/5n1p/1k2R3/2p2pP1/2b5/3q1RbK/3rP3/3B2R1 b - - 0 1"
+  }
+]

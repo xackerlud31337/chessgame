@@ -7,6 +7,10 @@ import { SettingsProvider, useSettings } from './hooks/useSettings'
 import { StatsProvider } from './hooks/useStats'
 import { FindSquare } from './modes/FindSquare'
 import { NameSquare } from './modes/NameSquare'
+import { FenToBoard } from './modes/FenToBoard'
+import { BoardToFen } from './modes/BoardToFen'
+import { Blindfold } from './modes/Blindfold'
+import { PieceVision } from './modes/PieceVision'
 
 function Logo() {
   return (
@@ -46,6 +50,18 @@ function Shell() {
       break
     case 'name':
       page = <NameSquare key="name" onMenu={toMenu} />
+      break
+    case 'fen-to-board':
+      page = <FenToBoard key="f2b" onMenu={toMenu} />
+      break
+    case 'board-to-fen':
+      page = <BoardToFen key="b2f" onMenu={toMenu} />
+      break
+    case 'blindfold':
+      page = <Blindfold key="bf" onMenu={toMenu} />
+      break
+    case 'piece-vision':
+      page = <PieceVision key="pv" onMenu={toMenu} />
       break
     case 'stats':
       page = <StatsView />

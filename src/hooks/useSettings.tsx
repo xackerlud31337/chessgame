@@ -2,6 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { defaultSoundEnabled } from '../lib/sound'
 import type { Orientation } from '../lib/squares'
 import { storage } from '../lib/storage'
+import type { DifficultyChoice } from '../lib/positions'
 
 export type Side = 'white' | 'black' | 'random'
 export type RoundLength = 30 | 60 | 0
@@ -13,12 +14,14 @@ export interface Settings {
   sound: boolean
   /** Name-the-square answer input: type the name, or pick from 4 options. */
   nameInput: 'type' | 'choice'
+  /** Position difficulty for the FEN and piece-vision modes. */
+  difficulty: DifficultyChoice
 }
 
 const KEY = 'settings'
 
 function defaults(): Settings {
-  return { side: 'white', showCoordinates: true, roundLength: 30, sound: defaultSoundEnabled(), nameInput: 'type' }
+  return { side: 'white', showCoordinates: true, roundLength: 30, sound: defaultSoundEnabled(), nameInput: 'type', difficulty: 'easy' }
 }
 
 function load(): Settings {
@@ -30,6 +33,9 @@ function load(): Settings {
     roundLength: saved.roundLength === 60 || saved.roundLength === 0 ? saved.roundLength : d.roundLength,
     sound: typeof saved.sound === 'boolean' ? saved.sound : d.sound,
     nameInput: saved.nameInput === 'choice' ? 'choice' : d.nameInput,
+    difficulty: (['easy', 'medium', 'hard', 'mixed'] as DifficultyChoice[]).includes(saved.difficulty as DifficultyChoice)
+      ? (saved.difficulty as DifficultyChoice)
+      : d.difficulty,
   }
 }
 

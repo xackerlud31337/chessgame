@@ -1,8 +1,9 @@
 import { useSettings, type RoundLength, type Side } from '../hooks/useSettings'
+import type { DifficultyChoice } from '../lib/positions'
 
 interface Props {
   /** Which settings to show. Defaults to all. */
-  show?: Array<'side' | 'coordinates' | 'roundLength' | 'sound' | 'nameInput'>
+  show?: Array<'side' | 'coordinates' | 'roundLength' | 'sound' | 'nameInput' | 'difficulty'>
   compact?: boolean
 }
 
@@ -72,6 +73,21 @@ export function SettingsPanel({ show, compact }: Props) {
             <button type="button" aria-pressed={settings.nameInput === 'choice'} onClick={() => update({ nameInput: 'choice' })}>
               4 choices
             </button>
+          </div>
+        </div>
+      )}
+      {has('difficulty') && (
+        <div className="setting">
+          <div>
+            <span className="name">Position difficulty</span>
+            {!compact && <span className="desc">For the FEN and piece-vision modes. Easy = a handful of pieces.</span>}
+          </div>
+          <div className="seg" role="group" aria-label="Position difficulty">
+            {(['easy', 'medium', 'hard', 'mixed'] as DifficultyChoice[]).map((d) => (
+              <button key={d} type="button" aria-pressed={settings.difficulty === d} onClick={() => update({ difficulty: d })}>
+                {d[0].toUpperCase() + d.slice(1)}
+              </button>
+            ))}
           </div>
         </div>
       )}
